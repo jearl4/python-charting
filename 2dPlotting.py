@@ -5,11 +5,10 @@ Created on Thu Jun 08 00:01:29 2017
 @author: JT
 """
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-#np.random.seed(2000)
-#y = np.random.standard_normal((20, 2)).cumsum(axis=0)
+np.random.seed(2000)
+y = np.random.standard_normal((20, 2)).cumsum(axis=0)
 #
 #plt.figure(figsize=(7,4))
 #fig, ax1 = plt.subplots()
@@ -48,19 +47,19 @@ import matplotlib.pyplot as plt
 #plt.ylabel('value')
 
 # Two subplots with different graphs
-#plt.figure(figsize=(9,4))
-#plt.subplot(121)
-#plt.plot(y[:, 0], lw=1.5, label='1st')
-#plt.plot(y[:, 0], 'ro')
-#plt.grid(True)
-#plt.legend(loc=0)
-#plt.axis('tight')
-#plt.ylabel('value')
-#plt.title('1st Data Set')
-#plt.subplot(122)
-#plt.bar(np.arange(len(y)), y[:, 1], width=0.5, color='g', label='2nd')
-#plt.grid(True)
-#plt.legend(loc=0)
-#plt.axis('tight')
-#plt.xlabel('index')
-#plt.title('2nd Data Set')
+plt.figure(figsize=(9,4))
+plt.subplot(121)
+plt.plot(y[:, 0], lw=1.5, label='1st')
+plt.plot(y[:, 0], 'ro')
+plt.grid(True)
+plt.legend(loc=0)
+plt.axis('tight')
+plt.ylabel('value')
+plt.title('1st Data Set')
+plt.subplot(122)
+plt.bar(np.arange(len(y)), y[:, 1], width=0.5, color='g', label='2nd')
+plt.grid(True)
+plt.legend(loc=0)
+plt.axis('tight')
+plt.xlabel('index')
+plt.title('2nd Data Set')

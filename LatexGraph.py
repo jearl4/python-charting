@@ -5,7 +5,6 @@ Created on Sun Jun 11 23:42:31 2017
 @author: JT
 """
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon
 
